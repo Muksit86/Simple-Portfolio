@@ -1,0 +1,215 @@
+/*---------------------------NAVBAR---------------------------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 35px;
+  height: 80px;
+}
+
+/*----Left----*/
+.left a {
+  font-size: 30px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 100ms ease-in-out;
+}
+
+.left a:hover {
+  color: var(--link-color);
+}
+
+/*----right----*/
+.right ul {
+  display: flex;
+}
+
+.right li {
+  margin-right: 35px;
+}
+
+.right li a {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.right li a i {
+  margin-right: 10px;
+}
+
+.right ul li:last-child a {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/*---------------------------SECTION I---------------------------*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+  padding: 0 35px;
+  gap: 50px;
+}
+
+.hero .text {
+  flex: 5;
+}
+
+.hero .text h2 {
+  font-size: 46px;
+}
+
+.hero .text span {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 4px solid orange; /* The typwriter cursor */
+  white-space: nowrap;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.hero .text p {
+  display: inline-block;
+  width: 70%;
+  font-size: 15px;
+  margin: 18px 0;
+}
+
+.hero .text .links {
+  margin-top: 15px;
+}
+
+.hero .text .links a {
+  display: inline-block;
+  padding: 8px 20px;
+  border: solid 1px var(--link-color);
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-bottom: 13px;
+}
+
+.hero .text .links a:hover {
+  border-color: var(--text-color);
+  color: var(--text-color);
+}
+
+.hero .headshot {
+  flex: 2;
+}
+
+.hero .headshot img {
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+/*---------------------------SECTION II---------------------------*/
+.live-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 20px 20px 20px;
+  overflow: hidden;
+}
+
+.preview-title {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+#preview-content {
+  border: 1px solid var(--link-color);
+  border-radius: 40px;
+  margin-top: 20px;
+  width: 100%;
+  max-height: 90vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  -ms-overflow-style: none;
+}
+
+/*---------------------------SECTION III---------------------------*/
+.headline p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 80px;
+}
+
+.skill-icons {
+  width: 30px;
+}
+
+.skill-list ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.skill-list ul li {
+  margin: 10px 20px;
+}
+
+.skill-list ul li .cell {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--link-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 250ms ease-in-out;
+  gap: 10px;
+}
+
+.skill-list ul li .cell:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+/*---------------------------SECTION IV---------------------------*/
+.education-table {
+  padding: 0 20px;
+  margin: 50px 0px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 20px;
+}
+
+td,
+th {
+  font-weight: 400;
+  border: 1px solid var(--link-color);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr span {
+  font-weight: 100;
+  font-style: italic;
+  color: rgb(246, 156, 156);
+}

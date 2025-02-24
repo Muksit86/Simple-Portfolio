@@ -1,0 +1,32 @@
+:root {
+  --text-color: hsl(220, 10%, 11%);
+  --link-color: hsl(224, 83%, 61%);
+  --background-color: hsl(220, 10%, 94%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
