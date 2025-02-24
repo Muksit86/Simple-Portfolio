@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const bodyHTML = document.body.innerHTML;
+        document.getElementById("preview-content").innerHTML = bodyHTML;
+      });
+    </script>
+    <link rel="stylesheet" crossorigin href="/Simple-Portfolio/assets/index-DowxIt-l.css">
+  </head>
+
+  <body>
+    <!-------------------NAV------------------->
+    <nav class="nav">
+      <div class="left">
+        <a href="/">Abdul Muksit</a>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="https://github.com/Muksit86" target="_blank"
+              ><i class="fa-brands fa-github"></i><span>Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/abdul-muksit-12d/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:amuksit7@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i><span>Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-------------------SECTION HERO------------------->
+    <section class="hero">
+      <div class="text">
+        <h2>Hi 👋</h2>
+        <h2><span>I am Abdul Muksit</span></h2>
+        <p>
+          A recent Computer Science and Engineering grad from Makaut. Ever since
+          I built my first app in high school, I've been hooked on creating tech
+          that makes a difference. At university, I dove deep into projects like
+          developing a machine learning model to optimize renewable energy
+          grids, which really ignited my passion for sustainable technology
+          solutions. I'm all about tackling complex problems and I'm excited
+          about the opportunity to bring fresh ideas and enthusiasm to your
+          team.
+        </p>
+        <div class="links">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+        </div>
+      </div>
+      <div class="headshot">
+        <img src="images/headshot-og.webp" alt="abdul-muksit headshot" />
+      </div>
+    </section>
+
+    <!-------------------SECTION PROJECTS------------------->
+    <section id="projects">
+      <div class="live-preview">
+        <div class="preview-title">This is my only project</div>
+        <div id="preview-content"></div>
+      </div>
+    </section>
+
+    <!-------------------SECTION SKILLS------------------->
+    <section id="skills">
+      <div class="headline">
+        <p>This is are programming languages i have learned so far 🙏</p>
+      </div>
+
+      <div class="skill-list">
+        <ul>
+          <li>
+            <div class="cell">
+              <img class="skill-icons" src="images/html.png" alt="" />
+              <span>HTML</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="cell">
+              <img class="skill-icons" src="images/css.png" alt="" />
+              <span>CSS</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="cell">
+              <img class="skill-icons" src="images/js.png" alt="" />
+              <span>JAVASCRIPT</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="cell">
+              <img class="skill-icons" src="images/cpp.png" alt="" />
+              <span>C++</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="cell">
+              <img class="skill-icons" src="/Simple-Portfolio/assets/git-CeCaA0e4.png" alt="" />
+              <span>Git</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-------------------SECTION EDUCATION------------------->
+    <section id="education">
+      <div class="education-table">
+        <table>
+          <tr>
+            <th>Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+          </tr>
+
+          <tr>
+            <th>Madhayamik</th>
+            <th>West Bengal Board of Secondary</th>
+            <th>87.7%</th>
+          </tr>
+
+          <tr>
+            <th>Diploma</th>
+            <th>WBSCTVESD</th>
+            <th>GPA - 8.3</th>
+          </tr>
+
+          <tr>
+            <th>Btech</th>
+            <th>MAKAUT</th>
+            <th>GPA - <span>ongoing</span></th>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
