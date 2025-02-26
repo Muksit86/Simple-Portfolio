@@ -94,7 +94,7 @@
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    font-size: 10px;
+    font-size: 20px;
   }
 
   td,
@@ -115,7 +115,7 @@
   }
 
   .hero .headshot img {
-    width: 300px;
+    width: 200px;
   }
 
   .hero .text p {
@@ -129,7 +129,7 @@
   }
 
   .skill-list ul li .cell span {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .skill-list ul li .cell {
